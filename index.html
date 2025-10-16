@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game - FAJRI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="keseimbangan.jpeg" alt="Keseimbangan" class="header-image">
+            <h1>🗿 Memory Card Game - FAJRI🗿</h1>
+            <img src="keseimbangan.jpeg" alt="Fajri" class="header-image">
+        </div>
+        
+        <div class="controls">
+            <div class="level-select">
+                <label>Pilih Level:</label>
+                <select id="level">
+                    <option value="easy">Mudah (2x2)</option>
+                    <option value="medium" selected>Sedang (4x4)</option>
+                    <option value="hard">Sulit (6x6)</option>
+                </select>
+            </div>
+
+            <div class="stats">
+                <div class="stat">Waktu: <span id="timer">00:00</span></div>
+                <div class="stat">Langkah: <span id="moves">0</span></div>
+                <div class="stat">Bintang: <span id="stars">1000</span></div>
+            </div>
+
+            <div class="buttons">
+                <button id="startBtn" onclick="startGame()">Mulai</button>
+                <button id="resetBtn" onclick="resetGame()">Reset</button>
+            </div>
+        </div>
+        
+        <div class="game-board" id="gameBoard"></div>
+        
+        <p class="footer">DIBUAT OLEH CAHYO DENGAN SEPENUH HATI❤️❤️🌹🌹</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
